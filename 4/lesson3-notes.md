@@ -54,3 +54,35 @@ Additional Optional Reading
 Calm Terminology, Actions, and Dependencies
 
 Blueprint Overview
+
+## Multi VM Blueprints
+
+A multi-VM blueprint is a framework that you can use to create an instance, provision, and launch applications that require multiple VMs. Just like single VM blueprints, you can define the underlying infrastructure of the VMs, application details, and actions that are carried out on a blueprint until the termination of the application.
+
+And, once again, you can choose which infrastructure to leverage when creating a multi-VM blueprint, with Nutanix, VMware, AWS, Azure, and GCP available as options.
+
+Creating a Multi-VM Blueprint
+Creating a multi-VM blueprint is a little more involved than a single VM blueprint. The process involves 6 major tasks, which are:
+
+Adding a service
+Configuring the VM, package, and service for your provider
+Setting up service dependencies
+Adding and configuring an application profile
+(Optional) Adding and configuring scale out and scale in
+Creating an action
+Multi-VM blueprints are discussed in much more detail in the next lesson, but it’s helpful for you to have an overview of them now.
+
+Now we come to the end of this lesson. Before we move on, let’s quickly recap some of the highlights of this lesson.
+
+Blueprints are essentially recipes for applications. These recipes encompass application architecture and Infrastructure choices, provisioning and deployment steps, application binaries, command steps, monitoring endpoints, remediation steps, licensing and monetization, and policies. Every time a Blueprint is executed it results in an application.
+
+Calm uses Services, Packages, Substrates, Deployments, and Application Profiles as building blocks for a blueprint. Together they fully define applications. By encoding these into a blueprint, Calm can understand the application as a whole and properly automate its lifecycle.
+
+Blueprints are also incredibly important. The ability to turn an application into a repeatable, automated blueprint offer enterprises a number of benefits: greater agility while minimizing human error; broader self-service capabilities while allowing IT to retain centralized control; the ability to modernize app development by pairing Calm with a certified Kubernetes solution; and the ability to automate provisioning across multi-cloud architectures from a single management interface.
+
+You can create two types of blueprints: single-VM and multi-VM. A single-VM blueprint is a framework that you can use to create an instance, provision, and launch applicati
+ons that require a single VM. A multi-VM blueprint is a framework for applications that require multiple VMs.
+
+Blueprints can be downloaded, uploaded, viewed, configured, edited, deleted, published, unpublished, and launched. Publishing, unpublishing, and deleting blueprints involves using the Marketplace Manager, which is what determines whether or not your blueprints are available to users of the Nutanix Marketplace.
+
+If you’re comfortable with these concepts, you’ll find yourself in a good position to delve deeper into Calm. So, in the next lesson, we’ll explore blueprints even further, by discussing multi-VM blueprints and how you can use them for more complex, sophisticated automation tasks.
